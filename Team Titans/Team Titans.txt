@@ -1,0 +1,21 @@
+Project Documentation:
+
+Project Name: Random Password Generator using Python
+Team Name   : Team Titans
+
+Description of Project: In this project, the user has to select the password length and then 
+click on the “Generate Password” button. It will show the generated password below. 
+If the user clicks on the “Copy To Clipboard” button, then it will copy the password automatically.
+
+Contents of Project:
+
+	1.Introduction
+	2.Abstract.
+	3.Features of R.P.G.
+	4.Methodology.
+	5.Proposed  System.
+	6.Source Code. 
+	7.Password Rules
+	
+Since the Project works on real time implementation. We are looking forward to implement our project 
+on Cloud with benefits of using serverless computing power of AWS lambda.
