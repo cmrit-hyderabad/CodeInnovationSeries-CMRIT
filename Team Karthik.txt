@@ -1,0 +1,223 @@
+                                                   DEPARTMENT OF COMPUTER SCIENCE AND ENGINEERING 
+                                                                         CMR INSTITUTE OF TECHNOLOGY
+                                                                (Approved by AICTE, Affiliated to JNTU, Hyderabad)
+                                                                            Kandlakoya , Medchal road, Hyderabad.
+                                                                              2020-2021
+                                                                                                    SENTIMENT ANALYSIS
+                                                                         Submitted By
+                                                                                                  S.Neelima(17R01A05A9)
+                                                                                                  M.Karthik (17R01A05E3)
+                                                                                                  P.Bhargav (17R01A05F4)
+                                                                                                  Md.Ijaz Ahmed (17R01A05M8)
+
+
+
+
+                                                                                                  Under the Guidance Of
+                                                                                                   Mr. A. Nageswara Rao
+                                                                                                   (Associate Professor)
+
+
+
+
+
+
+
+
+
+2.TABLE OF CONTENTS
+
+
+Sl.no          Content 	                                                 Page no.
+1.	Introduction	                                     3
+2.	How does sentiment analysis work	4-6
+3.	Classifiers	                                                       7
+4.	Methodology	                                     8
+5.	Proposed Work	                                   9-10
+6.	Implementation	                                    10
+7.	Conclusion	                                    11
+
+
+
+
+
+
+
+
+
+
+
+
+
+1. INTRODUCTION
+Sentiment analysis (or opinion mining) is a natural language processing technique used to determine whether data
+ is positive or negative. Sentiment analysis is often performed on textual data to help businesses monitor brand and 
+product sentiment in customer feedback, and understand customer needs.Sentiment analysis is the process of detecting
+ positive or negative sentiment in text. It’s often used by businesses to detect sentiment in social data, gauge brand
+ reputation, and understand customers.
+Since customers express their thoughts and feelings more openly than ever before,sentiment analysis is becoming an 
+essential tool to monitor and understand that sentiment. Automatically analyzing customer feedback, such as opinions
+ in survey responses and social media conversations, allows brands to learn what makes customers happy or frustrated,
+ so that they can tailor products and services to meet their customers’ needs.
+For example, using sentiment analysis to automatically analyze 4,000+ reviews about your product could help you discover
+ if customers are happy about your pricing plans and customer service.
+Types of Sentiment Analysis
+Sentiment analysis models focus on polarity (positive, negative, neutral) but also on feelings and emotions (angry, happy, sad, etc),
+ urgency (urgent, not urgent) and even intentions (interested v. not interested).
+Depending on how you want to interpret customer feedback and queries, you can define and tailor your categories to meet 
+your sentiment analysis needs. In the meantime, here are some of the most popular types of sentiment analysis:
+•	Fine-grained Sentiment Analysis
+•	Emotion Detection
+•	Aspect-based Sentiment Analysis
+•	Multilingual Sentiment Analysis
+
+
+2. How Does Sentiment Analysis Work?
+Sentiment analysis, otherwise known as opinion mining, works thanks to natural language processing (NLP) and machine
+ learning algorithms, to automatically determine the emotional tone behind online conversations.
+There is lot of unstructured data (emails, support tickets, chats, social media conversations, surveys, articles, documents).
+ Sentiment analysis can help in  making sense of this data.
+
+People post things on twitter and instagram. The tweets can be collected that have the product hash tag with them. 
+Then sentiment analysis model can be used to classify the tweets.
+There are different algorithms you can implement in sentiment analysis models, depending on how much data you need
+ to analyze, and how accurate you need your model to be. We’ll go over some of these in more detail, below:
+Sentiment analysis algorithms fall into one of three buckets:
+•	Rule-based: these systems automatically perform sentiment analysis based on a set of manually crafted rules.
+•	Automatic: systems rely on machine learning techniques to learn from data.
+•	Hybrid:systems combine both rule-based and automatic approaches.
+Rule-based Approaches
+Usually, a rule-based system uses a set of human-crafted rules to help identify subjectivity, polarity, or the subject of an opinion.
+These rules may include various NLP techniques developed in computational linguistics, such as:
+•	Stemming, tokenization, part-of-speech tagging and parsing.
+•	Lexicons (i.e. lists of words and expressions).
+
+The type of bucket used in the project is Automatic: systems rely on machine learning techniques to learn from data.
+
+Automatic Approaches
+Automatic methods, contrary to rule-based systems, don't rely on manually crafted rules, but on machine learning techniques.
+ A sentiment analysis task is usually modelled as a classification problem, whereby a classifier is fed a text and returns a category,
+ e.g. positive, negative. 
+ 
+The Training and Prediction Processes
+In the training process (a), our model learns to associate a particular input (i.e. a text) to the corresponding output (tag) based on
+ the test samples used for training. The feature extractor transfers the text input into a feature vector. Pairs of feature vectors and
+ tags (e.g. positive, negative, or neutral) are fed into the machine learning algorithm to generate a model.
+In the prediction process (b), the feature extractor is used to transform unseen text inputs into feature vectors. These feature vectors
+ are then fed into the model, which generates predicted tags (again, positive, negative, or neutral).
+Feature Extraction from Text
+The first step in a machine learning text classifier is to transform the text extraction or text vectorization, and the classical approach
+ has been bag-of-words or bag-of-ngrams with their frequency.
+
+More recently, new feature extraction techniques have been applied based on word embeddings (also known as word vectors). 
+This kind of representations makes it possible for words with similar meaning to have a similar representation, which can improve
+ the performance of classifiers.
+
+Hybrid Approaches
+Hybrid systems combine the desirable elements of rule-based and automatic techniques into one system. One huge benefit of these
+ systems is that results are often more accurate.
+
+
+3. Classifiers
+The classification step usually involves a statistical model like Naïve Bayes, Logistic Regression, Support Vector Machines, or 
+Neural Networks:
+
+•	Naïve Bayes: 
+A family of probabilistic algorithms that uses Bayes’s Theorem to predict the category of a text.
+
+•	Linear Regression: 
+A very well-known algorithm in statistics used to predict              some value (Y) given a set of features (X).
+
+•	Support Vector Machines: 
+A non-probabilistic model which uses a representation of text examples as points in a multidimensional space. Examples of 
+different categories (sentiments) are mapped to distinct regions within that space. Then, new texts are assigned a category based 
+on similarities with existing texts and the regions they’re mapped to.
+
+•	Deep Learning:
+A diverse set of algorithms that attempt to mimic the human brain,by employing artificial neural networks to process data.
+
+•	Logistic Regression:
+It is used to determine the output or resultwhen there are one or more than  one independent variable. 
+
+
+
+4. Methodology
+Logistic Regression is one of the basic and popular algorithm to solve a classification problem. It is named as 'Logistic Regression',
+ because it's underlying technique is quite the same as Linear Regression. The term “Logistic” is taken from the Logit function that
+ is used in this method of classification.
+Logistic regression is a supervised learning classification algorithm used to predict the probability of a target variable.
+The nature of target or dependent variable is dichotomous, which means there would be only two possible classes.In simple words,
+ the dependent variable is binary in nature having data coded as either 1 (stands for success/yes) or 0 (stands for failure/no).Logistic
+ Regression, also known as Logit Regression or Logit Model, is a mathematical model used in statistics to estimate (guess) the 
+probability of an event occurring having been given some previous data.
+Like all regression analyses, the logistic regression is a predictive analysis.Logistic regression is used to describe data and to explain 
+the relationship between one dependent binary variable and one or more nominal, ordinal, interval or ratio-level independent variables.
+Types of Logistic Regression
+1.	Binary Logistic Regression: The categorical response has only two possible outcomes.
+2.	MultinomialLogistic Regression: Three or more categories without ordering.
+3.	Ordinal Logistic Regression: Three or more categories.
+Subjectivity  filtering:  Subjectivity  filtering  is  used  to  gain 
+
+
+5. Proposed Work
+Before implementing the research work some concepts should be well known. These concepts are defined below: 
+• Subjectivity filtering: Subjectivity filtering is used to gain accurate result when the training dataset is small. To classify a tweet, 
+TextBlob is used which classify the tweets into subjective or objective. The tweets which have score less than a specific threshold are
+ then removed. After this filtering, the remaining tweets are used to train datasets. As subjectivity threshold increases, number of tweets
+ will filtered.
+• Preprocessing: Preprocessing is done to remove the data which is not useful to reduce the feature space. In most of the researches,
+ preprocessing steps are same but here some more steps are considered. 
+1. Basic steps: The emoticons in any comment or tweet are stripped of. Users often include twitter usernames in their tweets in order to 
+direct their messages. Usernames (e.g. @Chinmay) and URLs present in tweets are also stripped of because they do not help in sentiment
+ classification. Apart from full stops, which are dealt in the next point, other punctuations and special symbols are also removed. Repeated
+ whitespaces are replaced with a single space. Stemming is also performed in order to reduce the size of the feature space.
+2.Full Stops: Full stops in the model are usually replaced by a space. However, it is observed that casual language in tweets is often seen in
+ form of repeated punctuations. For example, this is so cool...wow. This format is taken into consideration, and two or more occurrences of 
+(.) and (- ) is replaced with a space. Also, full stops are also quite different in usage. Sometimes, there is not any space in between sentences. 
+3) Removing Hash-tags: Hash-tag in a tweet is used to emphasize a particular word or sentence, for example #thisisgood. Removal of these 
+hash-tags is important because these hash-tags do not define any sentiment. Thus pre-processing is done and hash-tags before any word are removed.
+
+
+6.Implementation
+Twitter sentiment analysis provides many exciting opportunities. Being able to analyze tweets in real-time, and determine the sentiment that 
+underlies each message, adds a new dimension to social media monitoring.
+Below, we’ve listed some of the most popular ways that sentiment analysis is being used in business:
+1.	Social Media Monitoring.
+2.	Brand Monitoring.
+3.	Voice of customer (VoC).
+4.	Customer Service.
+
+
+Social Media Monitoring
+Sentiment analysis is used in social media monitoring, allowing businesses to gain insights about how customers feel about certa  in topics,
+ and detect urgent issues in real time before they spiral out of control. 
+Online reputation is one of the most precious assets for brands. A bad review on social media can be costly to a company if it’s not handled 
+effectively and swiftly. 
+Twitter sentiment analysis allows you to keep track of what’s being said about your product or service on social media, and can help you 
+detect angry customers or negative mentions before they turn into a major crisis.
+
+
+
+7.Conclusion
+As it is observed these days, that many individuals’ posts surveys with respect to any item, movie, game or occasion via web-based networking
+ media stages. For this, it is essential for the organizations to define particular sentiments of such surveys keeping in mind the end goal to realize 
+that what individuals think about the item. The projected method utilizes one such stage called twitter to play out the sentiment categorization. 
+
+The information is taken as tweets in the wake of verifying the client. The current framework has utilized Naive Bayes and Support Vector 
+Machine classifiers to classify the sentiments. The classifiers utilized as a part of proposed framework are Support Vector Machine, Naïve
+ Bayes. For highlighting features Logistic Regression is used and for defining labels Effective score of a word is utilized.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
